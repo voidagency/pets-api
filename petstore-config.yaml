@@ -1,0 +1,17 @@
+---
+plugin: openapi
+specFile: petstore.yaml
+
+resources:
+  - path: /pets
+    method: get
+    response:
+      staticFile: pets.json
+  - path: /pets/1
+    method: get
+    response:
+      staticFile: pet-1.json
+  - path: /pets/2
+    method: get
+    response:
+      staticFile: pet-2.json
